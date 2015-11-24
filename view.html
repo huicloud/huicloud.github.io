@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+  <title> </title>
+  <meta charset="utf-8">
+  <style>
+body { font-family: 'Droid Serif'; }
+h1, h2, h3 {
+	font-family: 'Arial';
+	font-weight: normal;
+}
+
+.remark-code, .remark-inline-code { font-family: 'Consolas'; }
+
+/* Two-column layout */
+.left-column {
+	width: 50%;
+	float: left;
+}
+
+.right-column {
+	width: 50%;
+	float: right;
+}
+
+.left-column h3, .right-column h3{
+	text-align: center;
+}
+
+
+  </style>
+</head>
+<body>
+  <script src="remark.min.js"></script>
+  <script>
+    var req = new XMLHttpRequest();
+    req.onreadystatechange = function() {
+    	if (req.readyState == 4 || req.readyState == 'complete') {
+    		var slideshow = remark.create({source:req.responseText});
+    	}
+    }
+    req.open("GET", "ppt.md", true);
+    req.send();
+  </script>
+</body>
