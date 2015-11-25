@@ -278,3 +278,10 @@ class: left, top
 整体架构
 ![云系统架构](dzhyun.svg)
 
+
+---
+资源链接
+
+- [简介PPT](http://huicloud.github.io)
+- [接入文档](https://www.gitbook.com/book/elsejj/dzhyun/details)
+- [移动APP框架](https://github.com/huicloud/mobile)
