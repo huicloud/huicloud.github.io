@@ -5,6 +5,15 @@ h1, h2, h3 {
 	font-weight: normal;
 }
 
+h4 {
+	font-size: 20px;
+	font-family: 'Arial';
+	color: darkblue;
+}
+
+
+
+
 .remark-code, .remark-inline-code { font-family: 'Consolas'; }
 
 /* Two-column layout */
@@ -18,7 +27,16 @@ h1, h2, h3 {
 	float: right;
 }
 
-.left-column h3, .right-column h3{
+.left-column h3, h4, .right-column h3,h4{
 	text-align: center;
 }
 
+.banner {
+	background: black;
+	padding-left: 2em;
+	color: white;
+}
+
+.content {
+	padding: 1em 4em 1em 4em;
+}
